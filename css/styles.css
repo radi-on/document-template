@@ -1,0 +1,61 @@
+/* 
+
+Стили в конце (после title и шрифтов)
+
+
+=== Переменные ===
+
+01. Цвета:
+    01.01 Основной цвет текста
+    01.02 Вториичный цвет текста 
+    01.03 Акцентный цвет текста 
+    01.03 Основной цвет фона
+    01.03 Вторичный цвет фона
+
+
+    (вешает на боди основной цвет текста
+        body {
+            color: ......;
+        })
+02. Шрифты (подключаем после title)
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-accent-color: #FFFFFF;
+}
+
+ */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-accent-color: #FFFFFF;
+
+
+}
+
+
+/* Кнопка.
+    1. задаем типы всех кнопок на странице 
+    2. делает основной стиль для кнопки
+     и несколько вторичных
+*/
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+}
+
+.button.primary  {
+    background-color: var(--white-accent-color);
+    color: var(--accent-color);
+}
+
+
+body {
+        color: var(--primary-text-color);
+        background-color: #fff;
+    }
